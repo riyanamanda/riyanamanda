@@ -7,7 +7,7 @@ export default function index() {
                 <title>Riyan Amanda Nasution</title>
                 <meta
                     name='description'
-                    content='This website will describe a bit about me. nothing special, just tired to make boring stuff.'
+                    content='This website describe a bit about me. nothing special, just tired to make boring stuff.'
                 />
                 <meta
                     name='keywords'
