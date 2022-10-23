@@ -43,7 +43,7 @@ const Header = () => {
                     data-aos-duration='1000'
                 >
                     <a
-                        href='https://www.showwcase.com/riyanamanda'
+                        href='https://riyanamanda.showwcase.com/'
                         target={'_blank'}
                         rel={'noreferrer'}
                         className='hover:pl-1 transition-all duration-300 hover:text-purple-500 text-purple-900'
