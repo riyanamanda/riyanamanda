@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header className='w-full flex items-center justify-between container py-3'>
+        <header className='w-full flex flex-col md:flex-row items-center justify-center md:justify-between container py-3 px-3 md:px-0'>
             <ul className='flex space-x-16 items-center text-xs font-medium list-decimal text-purple-500'>
                 <li
                     className='w-12'
@@ -77,7 +77,7 @@ const Header = () => {
                 data-aos-delay='400'
                 data-aos-duration='1000'
             >
-                <button className='border border-purple-400/10 px-6 text-purple-50 bg-purple-500 py-2 rounded-md text-xs hover:bg-purple-200 hover:text-purple-900 transition-all duration-200 font-medium shadow-lg hover:shadow shadow-purple-500/20'>
+                <button className='border md:mt-0 mt-5 border-purple-400/10 px-6 text-purple-50 bg-purple-500 py-2 rounded-md text-xs hover:bg-purple-200 hover:text-purple-900 transition-all duration-200 font-medium shadow-lg hover:shadow shadow-purple-500/20'>
                     Resume
                 </button>
             </a>
