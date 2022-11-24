@@ -15,7 +15,7 @@ export default function Document() {
                     rel='stylesheet'
                 />
             </Head>
-            <body className='antialiased font-ran bg-gradient-to-br from-white to-purple-50'>
+            <body className='antialiased font-ran'>
                 <Main />
                 <NextScript />
             </body>

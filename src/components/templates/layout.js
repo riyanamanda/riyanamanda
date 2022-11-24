@@ -18,11 +18,11 @@ const Layout = ({ title = 'Riyan Amanda Nasution', children }) => {
             </Head>
 
             {/* Header of app */}
-            <div className='flex flex-col justify-between h-screen'>
+            <div className='flex flex-col justify-between bg-gradient-to-br from-white to-purple-50'>
                 <Header />
 
                 {/* Content of app */}
-                <main className='h-full'>{children}</main>
+                <main>{children}</main>
 
                 {/* Footer of app */}
                 <Footer />

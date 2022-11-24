@@ -1,4 +1,4 @@
-import { navigations } from '@/data/navigation';
+import { navigations } from '@/data';
 import React from 'react';
 
 const Header = () => {
