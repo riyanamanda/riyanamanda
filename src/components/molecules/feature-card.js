@@ -8,6 +8,7 @@ const FeatureCard = ({
     description,
     tech = [],
     position = 'odd',
+    delay,
 }) => {
     return (
         <li className='group flex justify-center w-fit'>
@@ -20,7 +21,7 @@ const FeatureCard = ({
                         data-aos={
                             position === 'odd' ? 'fade-right' : 'fade-left'
                         }
-                        data-aos-delay='500'
+                        data-aos-delay={delay}
                         data-aos-duration='1000'
                     >
                         <div className='bg-gradient-to-br from-[#DA22FF] to-[#9733EE] opacity-30 group-hover:opacity-0 h-full w-full absolute z-10 transition-all duration-300' />
@@ -43,7 +44,7 @@ const FeatureCard = ({
                         data-aos={
                             position === 'odd' ? 'fade-left' : 'fade-right'
                         }
-                        data-aos-delay='500'
+                        data-aos-delay={delay}
                         data-aos-duration='1000'
                     >
                         <h3 className='w-64 text-base mt-1 md:mt-0 md:text-2xl text-purple-900 rounded px-3 md:px-0 bg-purple-50 md:bg-transparent font-semibold'>
