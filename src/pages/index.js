@@ -4,6 +4,7 @@ import { projects } from '@/data';
 import Loading from 'react-loading';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { ImageRight } from '@/components/atoms';
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +40,7 @@ const Home = () => {
                 <a
                     href='mailto:ryant.n92@gmail.com'
                     data-aos='fade-in'
-                    data-aos-delay='1200'
+                    data-aos-delay='1100'
                     data-aos-duration='1000'
                 >
                     <button className='mt-5 md:mt-20 px-3 md:px-6 py-1 md:py-3 border border-purple-500/20 rounded shadow-md text-xs font-semibold tracking-wider text-purple-500 shadow-purple-500/20 hover:text-white hover:bg-purple-500 transition-all duration-200'>
@@ -48,12 +49,40 @@ const Home = () => {
                 </a>
             </section>
 
+            <section className='mt-28'>
+                <div className='container mx-auto flex gap-x-10 items-center justify-center px-5 sm:px-0'>
+                    <ImageRight
+                        url='https://lsigroup.id'
+                        src='/logo/lingkaran.png'
+                        alt='PT. Lingkaran Sistem Intelektual'
+                        className='w-20 h-8 md:w-32 md:h-12'
+                        delay={1300}
+                    />
+
+                    <ImageRight
+                        url='https://www.binadarma.ac.id'
+                        src='/logo/binadarma.png'
+                        alt='Universitas Bina Darma'
+                        className='w-20 h-8 md:w-40 md:h-12'
+                        delay={1500}
+                    />
+
+                    <ImageRight
+                        url='https://inticakrawalajaya.co.id'
+                        src='/logo/icj.png'
+                        alt='PT. Inti Cakrawala Jaya'
+                        className='w-20 h-8 md:w-40 md:h-12'
+                        delay={1700}
+                    />
+                </div>
+            </section>
+
             <section className='my-20 md:my-44 relative overflow-x-hidden'>
                 <span className='w-[400px] h-[450px] absolute top-20 -right-60 opacity-10 bg-purple-500 rounded-full blur-xl animate-blob'></span>
                 <h2
                     className='font-semibold text-black text-xs md:text-sm text-center'
                     data-aos='fade-in'
-                    data-aos-delay='1400'
+                    data-aos-delay='1900'
                     data-aos-duration='1000'
                 >
                     Featured Project{' '}
@@ -81,7 +110,7 @@ const Home = () => {
                                     image={project.image}
                                     tech={project.technology}
                                     position={project.position}
-                                    delay={1600 + index}
+                                    delay={index - 2000}
                                 />
                             ))}
                         </ul>
