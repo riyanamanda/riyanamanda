@@ -49,7 +49,7 @@ const Home = () => {
             </section>
 
             <section className='mt-28'>
-                <div className='container mx-auto flex gap-x-10 items-center justify-center px-5 sm:px-0'>
+                <div className='container mx-auto flex items-center justify-around md:justify-center md:gap-x-10'>
                     <ImageRight
                         url='https://lsigroup.id'
                         src='/logo/lingkaran.png'
@@ -77,7 +77,7 @@ const Home = () => {
             </section>
 
             <section className='my-20 md:my-44 relative overflow-x-hidden'>
-                <span className='w-[400px] h-[450px] absolute top-20 -right-60 opacity-10 bg-purple-500 rounded-full blur-xl animate-blob'></span>
+                <span className='hidden md:block w-[400px] h-[450px] absolute top-20 -right-60 opacity-10 bg-purple-500 rounded-full blur-xl animate-blob'></span>
                 <h2
                     className='font-semibold text-black text-xs md:text-sm text-center'
                     data-aos='fade-in'

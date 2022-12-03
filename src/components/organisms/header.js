@@ -21,11 +21,11 @@ const Header = () => {
         >
             <div className='container px-[1rem] py-5 flex flex-col md:flex-row justify-center md:justify-between md:items-center'>
                 <nav>
-                    <ul className='flex items-center justify-center text-xs space-x-4 list-inside list-decimal'>
+                    <ul className='flex items-center justify-center font-medium text-xs space-x-4 list-none md:list-inside md:list-decimal'>
                         {navigations.map((navigation, index) => (
                             <li
                                 key={index}
-                                className='group text-purple-500 transition-all duration-300'
+                                className='group text-purple-500 transition-all duration-300 '
                                 data-aos='zoom-in'
                                 data-aos-delay={index * 100}
                                 data-aos-duration='1000'
@@ -34,7 +34,7 @@ const Header = () => {
                                     href={navigation.url}
                                     target={'_blank'}
                                     rel={'noreferrer'}
-                                    className='text-black group-hover:text-purple-500 transition-all duration-300'
+                                    className='bg-gradient-to-r from-purple-500 to-purple-900 bg-clip-text text-transparent md:text-slate-700 md:group-hover:text-purple-500 transition-all duration-300'
                                 >
                                     {navigation.name}
                                 </a>
