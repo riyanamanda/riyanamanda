@@ -3,7 +3,6 @@ import { Layout } from '@/components/templates';
 import { projects } from '@/data';
 import Loading from 'react-loading';
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { ImageRight } from '@/components/atoms';
 
 const Home = () => {

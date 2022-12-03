@@ -24,7 +24,7 @@ const FeatureCard = ({
                         data-aos-delay={delay}
                         data-aos-duration='1000'
                     >
-                        <div className='bg-gradient-to-br from-[#DA22FF] to-[#9733EE] opacity-30 group-hover:opacity-0 h-full w-full absolute z-10 transition-all duration-300' />
+                        <div className='bg-gradient-to-br from-white to-[#9733EE] opacity-30 group-hover:opacity-0 h-full w-full absolute z-10 transition-all duration-300' />
                         <Image
                             src={image}
                             alt={title}
