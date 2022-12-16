@@ -42,14 +42,14 @@ const Home = () => {
                     data-aos-delay='1100'
                     data-aos-duration='1000'
                 >
-                    <button className='mt-5 md:mt-20 px-3 md:px-6 py-1 md:py-3 border border-purple-500/20 rounded shadow-md text-xs font-semibold tracking-wider text-purple-500 shadow-purple-500/20 hover:text-white hover:bg-purple-500 transition-all duration-200'>
+                    <button className='mt-5 md:mt-20 px-3 py-1.5 border border-purple-500/20 rounded shadow-md text-xs font-semibold tracking-wider text-purple-500 shadow-purple-500/10 hover:text-white hover:bg-purple-500 transition-all duration-200'>
                         Say Hi
                     </button>
                 </a>
             </section>
 
             <section className='mt-28'>
-                <div className='container mx-auto flex items-center justify-around md:justify-center md:gap-x-10'>
+                <div className='container mx-auto flex items-center justify-around md:justify-center md:gap-x-10 drop-shadow-md'>
                     <ImageRight
                         url='https://lsigroup.id'
                         src='/logo/lingkaran.png'
