@@ -5,7 +5,7 @@ const projects = [
         description:
             'Lingkaran is a news portal site in Indonesia that provides news dissemination features through graph (SNA) and is one of the business units of PT. Lingkaran Sistem Intelektual.',
         image: '/images/lingkaran.png',
-        technology: ['Laravel', 'React JS', 'Bootstrap', 'SCSS'],
+        technology: ['Laravel', 'React', 'Bootstrap', 'SCSS'],
         position: 'odd',
     },
     {
