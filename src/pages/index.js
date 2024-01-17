@@ -49,7 +49,7 @@ const Home = () => {
             </section>
 
             <section className='mt-28'>
-                <div className='container mx-auto flex items-center justify-around md:justify-center md:gap-x-10 drop-shadow-md'>
+                <div className='container mx-auto flex flex-wrap items-center justify-center sm:justify-around md:justify-center gap-10 drop-shadow-md'>
                     <ImageRight
                         url='https://lsigroup.id'
                         src='/logo/lingkaran.png'
@@ -72,6 +72,22 @@ const Home = () => {
                         alt='PT. Inti Cakrawala Jaya'
                         className='w-20 h-8 md:w-40 md:h-12'
                         delay={1700}
+                    />
+
+                    <ImageRight
+                        url='https://rs-erba.go.id'
+                        src='/logo/erba.png'
+                        alt='Rumah Sakit dr. Ernaldi Bahar'
+                        className='w-20 h-8 md:w-40 md:h-12'
+                        delay={1900}
+                    />
+
+                    <ImageRight
+                        url='https://simpleplan-regsumbagsel.com'
+                        src='/logo/patraniaga.png'
+                        alt='PT. Pertamina Patra Niaga'
+                        className='w-20 h-8 md:w-40 md:h-12'
+                        delay={2100}
                     />
                 </div>
             </section>

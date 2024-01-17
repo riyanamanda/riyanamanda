@@ -57,7 +57,7 @@ const FeatureCard = ({
 
                         <ul className='flex text-[8px] text-purple-900 items-center space-x-5 justify-end mt-5 md:text-xs'>
                             {tech.map((value, index) => (
-                                <li key={index}>{value}</li>
+                                <li className='font-medium bg-purple-200 shadow-xl shadow-purple-500/20 group-hover:shadow-none px-2 py-1 rounded tracking-wide text-purple-900 transition-all duration-300 ease-in-out' key={index}>{value}</li>
                             ))}
                         </ul>
                     </div>

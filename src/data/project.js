@@ -3,7 +3,7 @@ const projects = [
         url: 'https://lingkaran.id',
         title: 'Lingkaran',
         description:
-            'Lingkaran is a news portal site in Indonesia that provides news dissemination features through graph (SNA) and is one of the business units of PT. Lingkaran Sistem Intelektual.',
+            'Lingkaran is a news portal site in Indonesia that provides news dissemination features through graph (SNA) and is one of the business units of PT. Lingkaran Sistem Intelektual',
         image: '/images/lingkaran.png',
         technology: ['Laravel', 'React', 'Bootstrap', 'SCSS'],
         position: 'odd',
@@ -12,10 +12,19 @@ const projects = [
         url: 'https://inticakrawalajaya.co.id',
         title: 'PT. Inti Cakrawala Jaya',
         description:
-            'PT. ICJ is an importer and distributor that focuses in the sales and promotion of medical equipment for hospital purposes especially in opthalmology.',
+            'PT. ICJ is an importer and distributor that focuses in the sales and promotion of medical equipment for hospital purposes especially in opthalmology',
         image: '/images/icj.png',
         technology: ['Laravel', 'Tailwind'],
         position: 'even',
+    },
+    {
+        url: 'https://simpleplan-regsumbagsel.com',
+        title: 'SimplePlan',
+        description:
+            'SimplePlan is an application for recording and reporting oil billing, as well as a dashboard for monitoring and supporting decision making',
+        image: '/images/patraniaga.png',
+        technology: ['Laravel', 'Bootstrap', 'Jquery', 'Excel', 'PDF'],
+        position: 'odd',
     },
 ];
 
