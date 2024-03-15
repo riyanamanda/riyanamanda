@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Riyan Amanda</h1>
-<h3 align="center">A full of doubt web developer from Indonesia</h3>
+<h3 align="center">A full of doubt web developer but enthusiast from Indonesia</h3>
 <div align="center">
   
 [![Twitter: amanda_riyan](https://img.shields.io/twitter/follow/amanda_riyan?style=social)](https://twitter.com/amanda_riyan)
