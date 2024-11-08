@@ -44,7 +44,7 @@ const Header = () => {
                 </nav>
 
                 <a
-                    href={'/docs/new-cv.pdf'}
+                    href=''
                     target={'_blank'}
                     rel={'noreferrer'}
                     data-aos='zoom-in'
