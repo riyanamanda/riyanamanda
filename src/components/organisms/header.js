@@ -45,7 +45,6 @@ const Header = () => {
 
                 <a
                     href=''
-                    target={'_blank'}
                     rel={'noreferrer'}
                     data-aos='zoom-in'
                     data-aos-delay='500'
