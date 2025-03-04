@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Riyan Amanda</h1>
 
-I’m a Laravel developer with over 4 years of experience, building dynamic and efficient web applications using the Laravel framework. Over the years, I’ve sharpened my skills in PHP and MVC architecture, delivering solid backend solutions for various projects. 🚀
+I’m a Laravel developer with over 4 years of experience, building dynamic and efficient web applications using the Laravel framework. Over the years, I’ve sharpened my skills in PHP and MVC architecture, delivering solid web application solutions for various projects. 🚀
 
 Lately, I’ve been focusing on leveling up my skills by diving into **Spring Boot** and **React.js** to become a full-stack developer. 💻✨ I’m really enjoying learning more about **Java-based backend development** (Spring Boot) and **modern frontend technologies** (React.js). I’m excited about expanding my toolkit and creating even more powerful, scalable, and responsive web apps. 😎
 
