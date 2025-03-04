@@ -43,7 +43,7 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <a
+                {/* <a
                     href={'/docs/new-cv.pdf'}
                     target={'_blank'}
                     rel={'noreferrer'}
@@ -55,7 +55,7 @@ const Header = () => {
                     <button className='bg-purple-500 text-white text-xs px-3 py-1.5 mt-8 md:mt-0 rounded shadow-xl shadow-purple-500/10 font-medium hover:bg-purple-100 transition-all duration-300 hover:text-purple-500'>
                         Resume
                     </button>
-                </a>
+                </a> */}
             </div>
         </header>
     );

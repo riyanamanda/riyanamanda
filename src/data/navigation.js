@@ -5,8 +5,8 @@ const navigations = [
     },
 
     {
-        name: 'Showwcase',
-        url: 'https://riyanamanda.showwcase.com/',
+        name: 'Linkedin',
+        url: 'https://www.linkedin.com/in/riyan-amanda/',
     },
 
     {
