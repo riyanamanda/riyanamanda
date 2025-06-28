@@ -6,8 +6,7 @@ Lately, I’ve been focusing on leveling up my skills by diving into **Spring Bo
 
 I’m always passionate about learning and growing as a developer, and I’m not just interested in mastering what’s worked in the past—I’m focused on staying current and preparing for the future of web technologies. 🌱🔥
 
----
-
+<br/>
 
 <div align="center">
   
@@ -17,3 +16,14 @@ I’m always passionate about learning and growing as a developer, and I’m not
 [![website](https://img.shields.io/badge/Website-46a2f1.svg?&style=flat-square&logo=Google-Chrome&logoColor=white&link=https://riyanamanda.vercel.app/)](https://riyanamanda.vercel.app/)
 
 </div>
+
+#### My Featured Work
+----
+This is what I've made in programming for web apps, and will increase as time goes by.
+- [Lingkaran ID](https://lingkaran.id) - Web news portal
+- [SimplePlan](https://simpleplan-regsumbagsel.com) - Application for recording and reporting oil billing
+- [PT. Inti Cakrawala Jaya](https://inticakrawalajaya.co.id) - Company profile
+
+<br/><br/>
+
+> Regards - Slow but Sure.
