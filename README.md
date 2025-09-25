@@ -2,7 +2,7 @@
 
 I’m a Laravel developer with over 4 years of experience, building dynamic and efficient web applications using the Laravel framework. Over the years, I’ve sharpened my skills in PHP and MVC architecture. 🚀
 
-Lately, I’ve been focusing on leveling up my skills by diving into **Spring Boot** and **VueJS** to become a full-stack developer. 💻✨ I’m really enjoying learning more about **Java-based backend development** (Spring Boot) and **modern frontend technologies** (VueJS). I’m excited about expanding my toolkit and creating even more powerful, scalable, and responsive web apps. 😎
+Lately, I’ve been focusing on leveling up my skills by diving into **Spring Boot** and **VueJS** to become a full-stack developer with more focus on **Backend**. 💻✨ I’m really enjoying learning more about **Java-based backend development** (Spring Boot) and **modern frontend technologies** (VueJS). I’m excited about expanding my toolkit and creating even more powerful, scalable, and responsive web apps. 😎
 
 I’m always passionate about learning and growing as a developer, and I’m not just interested in mastering what’s worked in the past—I’m focused on staying current and preparing for the future of web technologies. 🌱🔥
 
