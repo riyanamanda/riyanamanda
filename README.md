@@ -1,10 +1,16 @@
 <h1 align="center">Hi 👋, I'm Riyan Amanda</h1>
 
-I’m a Laravel developer with over 4 years of experience, building dynamic and efficient web applications using the Laravel framework. Over the years, I’ve sharpened my skills in PHP and MVC architecture. 🚀
+I am a Full-Stack Software Engineer with over four years of experience in building scalable, efficient, and maintainable systems. Originally rooted in the PHP/Laravel ecosystem, I have evolved my focus toward high-performance modern stacks and robust architectural patterns.
 
-Lately, I’ve been focusing on leveling up my skills by diving into **Spring Boot** and **VueJS** to become a full-stack developer with more focus on **Backend**. 💻✨ I’m really enjoying learning more about **Java-based backend development** (Spring Boot) and **modern frontend technologies** (VueJS). I’m excited about expanding my toolkit and creating even more powerful, scalable, and responsive web apps. 😎
+My development philosophy is centered on Clean Architecture and Feature-Based organization. This ensures that business logic remains decoupled, highly testable, and independent of external frameworks. I take full ownership of the technical lifecycle, including:
 
-I’m always passionate about learning and growing as a developer, and I’m not just interested in mastering what’s worked in the past—I’m focused on staying current and preparing for the future of web technologies. 🌱🔥
+Database Engineering: Designing and optimizing complex relational schemas in PostgreSQL to ensure data integrity, query efficiency, and high performance.
+
+Backend Architecture: Implementing feature-based structures on the server side to facilitate isolated domain development, long-term maintainability, and system concurrency (Go, Spring Boot).
+
+Frontend Engineering: Applying Clean Architecture in React using a feature-driven approach, separating core business rules from UI components to deliver highly modular and scalable frontends.
+
+DevOps & Automation: Engineering robust CI/CD pipelines via GitHub Actions, containerizing services with Docker, and managing production deployments across Virtual Machine (VM) environments.
 
 <br/>
 
