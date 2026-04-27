@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Riyan Amanda</h1>
 
 <p align="center">
-Fullstack Software Engineer | Java (Spring Boot) • Go • React • REST APIs • Docker • CI/CD
+Fullstack Software Engineer - Java (Spring Boot) • Go • React • REST APIs • Docker • CI/CD • System Architecture
 </p>
 
 ---
