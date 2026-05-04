@@ -40,26 +40,15 @@ Fullstack Software Engineer - Java (Spring Boot) • Go • React • REST APIs 
 
 ## 📌 Featured Projects
 
-### 🔹 SPACEPRO  
+### 🔹 [SPACEPRO](https://admin.spacepro.id)
 > Smart coworking space platform for internal operations and business workflows.  
 > Built backend services with Spring Boot, Admin Panel with React, Redis caching, and CI/CD pipelines.  
-> 
-> 🔗 https://admin.spacepro.id/login
 
-### 🔹 SIMPLE PLAN  
-> Operational web application for planning, verification, and reporting processes across regional business units.  
-> 
-> 🔗 https://simpleplan-regsumbagsel.com
+### 🔹 [SIMPLE PLAN](https://simpleplan-regsumbagsel.com)
+> Operational web application for planning, verification, and reporting processes across regional business units.
 
-### 🔹 Lingkaran.id  
-> Digital news portal enhanced with analytics insights and news dissemination visualization.  
-> 
-> 🔗 https://lingkaran.id
-
-### 🔹 PT. Inti Cakrawala Jaya  
-> Corporate company profile website.  
-> 
-> 🔗 https://inticakrawalajaya.co.id
+### 🔹 [Lingkaran ID](https://lingkaran.id)
+> Digital news portal enhanced with analytics insights and news dissemination visualization.
 
 ---
 
