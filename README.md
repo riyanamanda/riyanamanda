@@ -1,7 +1,7 @@
 <h1 align="center">Riyan Amanda Nasution</h1>
 <p align="center">
   <b>Fullstack Software Engineer</b><br>
-  Java (Spring Boot) • Go • React • System Architecture • DevOps
+  Go • Java (Spring Boot) • React • System Architecture • DevOps
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ### Professional Summary
 
-Fullstack Software Engineer with 5+ years of experience building production web applications. Specialized in backend development using Java (Spring Boot) and Go, complemented by extensive frontend experience using React and TypeScript.
+Fullstack Software Engineer with 5+ years of experience building production web applications. Specialized in backend development using Go and Java (Spring Boot), complemented by extensive frontend experience using React and TypeScript.
 
 Expertise includes designing REST APIs, implementing modular architectures, and evolving systems from monolithic structures toward scalable, decoupled architectures. Focused on delivering end-to-end solutions aligned with real-world business needs.
 
@@ -27,7 +27,7 @@ Expertise includes designing REST APIs, implementing modular architectures, and 
 
 | Domain | Technologies |
 |:--- |:--- |
-| **Backend Engineering** | Java (Spring Boot), Go, Laravel, REST APIs |
+| **Backend Engineering** | Go, Java (Spring Boot), Laravel, REST APIs |
 | **Frontend Development** | React, TypeScript, Vue.js, TanStack Query |
 | **Database Systems** | PostgreSQL, MySQL, Redis |
 | **Architecture** | Modular Design, Clean Architecture, Feature-Based Structure |
