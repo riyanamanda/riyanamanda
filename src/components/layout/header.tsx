@@ -1,7 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { navigations } from './data';
 import DarkModeToggle from '@/features/shared/dark-mode-toggle';
+import { Button } from '@/components/ui/button';
+
+const ease = [0.25, 0.1, 0.25, 1] as const;
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -22,11 +26,11 @@ const Header = () => {
                 <nav>
                     <ul className='flex items-center justify-center font-medium text-xs space-x-5 list-none'>
                         {navigations.map((navigation, index) => (
-                            <li
+                            <motion.li
                                 key={index}
-                                data-aos='zoom-in'
-                                data-aos-delay={index * 80}
-                                data-aos-duration='800'
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: index * 0.08, duration: 0.5, ease }}
                             >
                                 <a
                                     href={navigation.url}
@@ -34,24 +38,26 @@ const Header = () => {
                                 >
                                     {navigation.name}
                                 </a>
-                            </li>
+                            </motion.li>
                         ))}
                     </ul>
                 </nav>
 
-                <div
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.4, duration: 0.5, ease }}
                     className='flex items-center justify-center gap-2'
-                    data-aos='zoom-in'
-                    data-aos-delay='400'
-                    data-aos-duration='800'
                 >
                     <DarkModeToggle />
-                    <a href='/resume.pdf' target='_blank' rel='noreferrer'>
-                        <button className='bg-purple-500 text-white text-xs px-3 py-1.5 rounded shadow-lg shadow-purple-500/20 font-medium hover:bg-purple-600 dark:hover:bg-purple-400 transition-all duration-200'>
-                            Resume
-                        </button>
-                    </a>
-                </div>
+                    <Button
+                        size='xs'
+                        asChild
+                        className='bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-400 shadow-lg shadow-purple-500/20 rounded normal-case tracking-normal font-medium'
+                    >
+                        <a href='/resume.pdf' target='_blank' rel='noreferrer'>Resume</a>
+                    </Button>
+                </motion.div>
             </div>
         </header>
     );

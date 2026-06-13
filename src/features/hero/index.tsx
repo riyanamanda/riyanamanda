@@ -1,36 +1,19 @@
-import ImageRight from '@/features/shared/image-right';
+'use client';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Handshake, MapPin, MonitorCog } from 'lucide-react';
+
+const ease = [0.25, 0.1, 0.25, 1] as const;
 
 const TECH_TAGS = ['REST API', 'Spring Boot', 'Go', 'PostgreSQL', 'Docker', 'CI/CD'];
 
 const LOGOS = [
-    {
-        url: 'https://lsigroup.id',
-        src: '/logo/lingkaran.png',
-        alt: 'PT. Lingkaran Sistem Intelektual',
-        className: 'w-20 h-8 md:w-28 md:h-10',
-        delay: 100,
-    },
-    {
-        url: 'https://www.binadarma.ac.id',
-        src: '/logo/binadarma.png',
-        alt: 'Universitas Bina Darma',
-        className: 'w-20 h-8 md:w-36 md:h-10',
-        delay: 200,
-    },
-    {
-        url: 'https://rs-erba.go.id',
-        src: '/logo/erba.png',
-        alt: 'Rumah Sakit dr. Ernaldi Bahar',
-        className: 'w-20 h-8 md:w-36 md:h-10',
-        delay: 300,
-    },
-    {
-        url: 'https://www.pertamina.com',
-        src: '/logo/patraniaga.png',
-        alt: 'PT. Pertamina Patra Niaga',
-        className: 'w-20 h-8 md:w-36 md:h-10',
-        delay: 400,
-    },
+    { url: 'https://lsigroup.id', src: '/logo/lingkaran.png', alt: 'PT. Lingkaran Sistem Intelektual', className: 'w-20 h-8 md:w-28 md:h-10', delay: 0.1 },
+    { url: 'https://www.binadarma.ac.id', src: '/logo/binadarma.png', alt: 'Universitas Bina Darma', className: 'w-20 h-8 md:w-36 md:h-10', delay: 0.2 },
+    { url: 'https://rs-erba.go.id', src: '/logo/erba.png', alt: 'Rumah Sakit dr. Ernaldi Bahar', className: 'w-20 h-8 md:w-36 md:h-10', delay: 0.3 },
+    { url: 'https://www.pertamina.com', src: '/logo/patraniaga.png', alt: 'PT. Pertamina Patra Niaga', className: 'w-20 h-8 md:w-36 md:h-10', delay: 0.4 },
 ];
 
 export default function HeroSection() {
@@ -40,74 +23,112 @@ export default function HeroSection() {
                 id='hero'
                 className='flex flex-col items-center justify-center mt-16 md:mt-40 container px-3 md:px-0 relative'
             >
-                <span className='w-[400px] h-[450px] absolute -top-40 -left-96 opacity-20 bg-purple-500 rounded-full blur-3xl animate-blob' />
+                <span className='w-100 h-112.5 absolute -top-40 -left-96 opacity-20 bg-purple-500 rounded-full blur-3xl animate-blob' />
 
-                <h1
-                    className='text-2xl md:text-6xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#7928CA] to-[#FF0080] sm:h-14 md:h-20 w-full text-center'
-                    data-aos='fade-in'
-                    data-aos-delay='300'
-                    data-aos-duration='1000'
+                <motion.h1
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 1, ease }}
+                    className='text-2xl md:text-6xl font-semibold bg-clip-text text-transparent bg-linear-to-r from-[#7928CA] to-[#FF0080] sm:h-14 md:h-20 w-full text-center'
                 >
                     Riyan Amanda
-                </h1>
+                </motion.h1>
 
-                <p
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 1, ease }}
                     className='text-xs md:text-sm mt-4 text-purple-700 dark:text-purple-300 font-medium tracking-wide text-center'
-                    data-aos='fade-in'
-                    data-aos-delay='500'
-                    data-aos-duration='1000'
                 >
                     Backend-focused Software Engineer · Java · Go · Spring Boot
-                </p>
+                </motion.p>
 
-                <p
-                    className='text-xs md:text-sm mt-2 text-gray-500 dark:text-gray-400 text-center'
-                    data-aos='fade-in'
-                    data-aos-delay='600'
-                    data-aos-duration='1000'
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.6, duration: 1, ease }}
+                    className='text-xs md:text-sm mt-2 text-gray-500 dark:text-gray-400 text-center inline-flex items-center justify-center gap-2 flex-wrap'
                 >
-                    Palembang, Indonesia · Open to relocation / remote
-                </p>
+                    <span className='inline-flex items-center gap-1'>
+                        <MapPin
+                            className='h-3 w-3 md:h-3.5 md:w-3.5 text-purple-600 dark:text-purple-300'
+                            aria-hidden='true'
+                        />
+                        Palembang, Indonesia
+                    </span>
+                    <span aria-hidden='true'>·</span>
+                    <span className='inline-flex items-center gap-1'>
+                        <MonitorCog
+                            className='h-3 w-3 md:h-3.5 md:w-3.5 text-purple-600 dark:text-purple-300'
+                            aria-hidden='true'
+                        />
+                        Open to relocation / remote
+                    </span>
+                </motion.p>
 
-                <div
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.7, duration: 1, ease }}
                     className='flex flex-wrap justify-center gap-2 mt-5'
-                    data-aos='fade-in'
-                    data-aos-delay='700'
-                    data-aos-duration='1000'
                 >
                     {TECH_TAGS.map((tag) => (
-                        <span
+                        <Badge
                             key={tag}
-                            className='text-[10px] px-2.5 py-1 rounded-full border border-purple-300/50 dark:border-purple-700/50 text-purple-600 dark:text-purple-400 bg-purple-50/50 dark:bg-purple-950/30'
+                            className='px-2.5 py-1 rounded-full border border-purple-300/50 dark:border-purple-700/50 text-purple-600 dark:text-purple-400 bg-purple-50/50 dark:bg-purple-950/30 normal-case tracking-wide font-medium text-[10px]'
                         >
                             {tag}
-                        </span>
+                        </Badge>
                     ))}
-                </div>
+                </motion.div>
 
-                <a
-                    href='mailto:ryant.n92@gmail.com'
-                    data-aos='fade-in'
-                    data-aos-delay='800'
-                    data-aos-duration='1000'
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.8, duration: 1, ease }}
+                    className='mt-8 md:mt-14'
                 >
-                    <button className='mt-8 md:mt-14 px-4 py-2 border border-purple-500/30 rounded-full shadow-md text-xs font-semibold tracking-wider text-purple-500 dark:text-purple-400 shadow-purple-500/10 hover:text-white dark:hover:text-white hover:bg-purple-500 transition-all duration-200'>
-                        Say Hi →
-                    </button>
-                </a>
+                    <Button
+                        variant='outline'
+                        size='sm'
+                        asChild
+                        className='rounded-full border-purple-500/30 text-purple-500 dark:text-purple-400 hover:bg-purple-500 hover:text-white dark:hover:text-white hover:border-purple-500 shadow-md shadow-purple-500/10 normal-case tracking-wider font-semibold'
+                    >
+                        <a href='mailto:ryant.n92@gmail.com'>Say Hi →</a>
+                    </Button>
+                </motion.div>
             </section>
 
             <section className='mt-24 md:mt-32'>
-                <p
-                    className='text-center text-[10px] text-gray-400 dark:text-gray-600 uppercase tracking-widest mb-6'
-                    data-aos='fade-in'
-                    data-aos-duration='800'
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease }}
+                    className='text-center text-[10px] text-gray-400 dark:text-gray-600 uppercase tracking-widest mb-6 inline-flex items-center justify-center gap-1.5 w-full'
                 >
+                    <Handshake
+                        className='h-3 w-3 md:h-3.5 md:w-3.5 text-purple-500 dark:text-purple-400'
+                        aria-hidden='true'
+                    />
                     Worked with
-                </p>
+                </motion.p>
                 <div className='container mx-auto flex flex-wrap items-center justify-center gap-8 md:gap-12 drop-shadow-sm'>
                     {LOGOS.map((logo) => (
-                        <ImageRight key={logo.alt} {...logo} />
+                        <motion.a
+                            key={logo.alt}
+                            href={logo.url}
+                            target='_blank'
+                            rel='noreferrer'
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: logo.delay, duration: 0.8, ease }}
+                        >
+                            <div className={`${logo.className} relative`}>
+                                <Image src={logo.src} alt={logo.alt} fill style={{ objectFit: 'contain' }} />
+                            </div>
+                        </motion.a>
                     ))}
                 </div>
             </section>

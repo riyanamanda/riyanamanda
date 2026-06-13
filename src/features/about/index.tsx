@@ -1,14 +1,12 @@
 import SectionHeading from '@/features/shared/section-heading';
+import { FadeUp } from '@/features/shared/animated';
+import { UserRound } from 'lucide-react';
 
 export default function AboutSection() {
     return (
         <section id='about' className='my-24 md:my-36 container px-3 md:px-0'>
-            <SectionHeading title='About' />
-            <div
-                className='max-w-2xl mx-auto space-y-4 text-xs md:text-sm leading-relaxed text-gray-600 dark:text-gray-400 text-center md:text-left'
-                data-aos='fade-up'
-                data-aos-duration='800'
-            >
+            <SectionHeading title='About' icon={UserRound} tone='about' />
+            <FadeUp className='max-w-2xl mx-auto space-y-4 text-xs md:text-sm leading-relaxed text-gray-600 dark:text-gray-400 text-center md:text-left'>
                 <p>
                     <strong className='text-purple-700 dark:text-purple-300'>
                         Backend-focused
@@ -34,7 +32,7 @@ export default function AboutSection() {
                     real-world business needs — with an eye on deployment, observability, and
                     maintainability.
                 </p>
-            </div>
+            </FadeUp>
         </section>
     );
 }

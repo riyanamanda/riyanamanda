@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_Mono, Viga, Noto_Sans, Playfair_Display } from 'next/font/google';
-import 'aos/dist/aos.css';
 import './globals.css';
-import { AOSInit } from '@/features/shared';
-import { Header, Footer } from '@/features/layout';
+import { Header, Footer } from '@/components/layout';
 import { cn } from '@/lib/utils';
 
 const playfairDisplayHeading = Playfair_Display({ subsets: ['latin'], variable: '--font-heading' });
@@ -61,8 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className={`${notoSansMono.variable} ${viga.variable} antialiased font-ran`}
                 suppressHydrationWarning
             >
-                <AOSInit />
-                <div className='flex flex-col min-h-screen bg-gradient-to-br from-white to-purple-50 dark:from-gray-950 dark:to-gray-900 transition-colors duration-300'>
+                <div className='flex flex-col min-h-screen bg-linear-to-br from-white to-purple-50 dark:from-gray-950 dark:to-gray-900 transition-colors duration-300'>
                     <Header />
                     <main>{children}</main>
                     <Footer />
