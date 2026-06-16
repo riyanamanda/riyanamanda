@@ -40,7 +40,7 @@ export default function HeroSection() {
                     transition={{ delay: 0.5, duration: 1, ease }}
                     className='text-xs md:text-sm mt-4 text-purple-700 dark:text-purple-300 font-medium tracking-wide text-center'
                 >
-                    Backend-focused Software Engineer · Java · Go · Spring Boot
+                    Backend-focused Software Engineer · Go · Java (Spring Boot)
                 </motion.p>
 
                 <motion.p

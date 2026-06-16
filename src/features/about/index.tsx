@@ -14,10 +14,10 @@ export default function AboutSection() {
                     Software Engineer with{' '}
                     <strong className='text-purple-700 dark:text-purple-300'>5+ years</strong> of
                     experience building production web applications. Primary expertise in{' '}
+                    <strong className='text-purple-700 dark:text-purple-300'>Go</strong> and{' '}
                     <strong className='text-purple-700 dark:text-purple-300'>
                         Java (Spring Boot)
-                    </strong>{' '}
-                    and <strong className='text-purple-700 dark:text-purple-300'>Go</strong>, with
+                    </strong>{' '}, with
                     solid frontend capability in React when the project calls for it.
                 </p>
                 <p>
