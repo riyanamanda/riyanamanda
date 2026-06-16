@@ -20,6 +20,9 @@ const viga = Viga({
     variable: '--font-viga',
 });
 
+const siteUrl = 'https://riyanamanda.vercel.app';
+const ogImage = `${siteUrl}/og-image.png`;
+
 export const metadata: Metadata = {
     title: 'Riyan Amanda',
     description:
@@ -34,6 +37,23 @@ export const metadata: Metadata = {
         'portfolio',
         'web development',
     ],
+    openGraph: {
+        type: 'website',
+        url: siteUrl,
+        siteName: 'Riyan Amanda',
+        title: 'Riyan Amanda — Backend Software Engineer',
+        description:
+            "Hi, I'm Riyan Amanda — Backend-focused Software Engineer specializing in Java (Spring Boot) and Go, with 5+ years building production REST APIs and scalable backend systems.",
+        images: [{ url: ogImage, width: 1200, height: 630, alt: 'Riyan Amanda' }],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Riyan Amanda — Backend Software Engineer',
+        description:
+            "Hi, I'm Riyan Amanda — Backend-focused Software Engineer specializing in Java (Spring Boot) and Go, with 5+ years building production REST APIs and scalable backend systems.",
+        images: [ogImage],
+    },
+    metadataBase: new URL(siteUrl),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
