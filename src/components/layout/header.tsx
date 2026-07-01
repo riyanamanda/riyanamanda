@@ -1,9 +1,8 @@
 'use client';
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { navigations } from './data';
 import DarkModeToggle from '@/features/shared/dark-mode-toggle';
-import { Button } from '@/components/ui/button';
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { navigations } from './data';
 
 const ease = [0.25, 0.1, 0.25, 1] as const;
 
@@ -50,13 +49,6 @@ const Header = () => {
                     className='flex items-center justify-center gap-2'
                 >
                     <DarkModeToggle />
-                    <Button
-                        size='xs'
-                        asChild
-                        className='bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-400 shadow-lg shadow-purple-500/20 rounded normal-case tracking-normal font-medium'
-                    >
-                        <a href='/resume.pdf' target='_blank' rel='noreferrer'>Resume</a>
-                    </Button>
                 </motion.div>
             </div>
         </header>
