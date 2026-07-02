@@ -3,7 +3,7 @@ import { Skill } from '@/types';
 const skills: Skill[] = [
     {
         category: 'Backend',
-        items: ['Java (Spring Boot)', 'Go', 'Laravel'],
+        items: ['Go', 'Java (Spring Boot)'],
         isPrimary: true,
     },
     {

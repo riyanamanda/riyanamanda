@@ -56,64 +56,72 @@
     margin-inline: auto;
 }
 
-/* ── Purple theme tokens ─────────────────────────────────────────── */
+/* ── Go Blue theme tokens ─────────────────────────────────────────── */
 @layer base {
     :root {
         --background: oklch(1 0 0);
-        --foreground: oklch(0.291 0.122 292);
+        /* Deep Blue-Gray untuk teks utama agar kontras tinggi */
+        --foreground: oklch(0.25 0.04 220);
 
         --card: oklch(1 0 0);
-        --card-foreground: oklch(0.291 0.122 292);
+        --card-foreground: oklch(0.25 0.04 220);
         --popover: oklch(1 0 0);
-        --popover-foreground: oklch(0.291 0.122 292);
+        --popover-foreground: oklch(0.25 0.04 220);
 
-        --primary: oklch(0.627 0.265 293.5);
+        /* Go Cyan/Blue asli (#00ADD8) */
+        --primary: oklch(0.713 0.195 221.3);
         --primary-foreground: oklch(1 0 0);
 
-        --secondary: oklch(0.977 0.025 292.717);
-        --secondary-foreground: oklch(0.291 0.122 292);
+        /* Aqua lembut untuk secondary/muted background */
+        --secondary: oklch(0.96 0.025 221.3);
+        --secondary-foreground: oklch(0.3 0.1 221.3);
 
-        --muted: oklch(0.946 0.046 292.717);
-        --muted-foreground: oklch(0.496 0.265 292);
+        --muted: oklch(0.93 0.02 221.3);
+        --muted-foreground: oklch(0.45 0.08 221.3);
 
-        --accent: oklch(0.946 0.046 292.717);
-        --accent-foreground: oklch(0.291 0.122 292);
+        --accent: oklch(0.93 0.02 221.3);
+        --accent-foreground: oklch(0.25 0.1 221.3);
 
-        --destructive: oklch(0.577 0.245 27.325);
+        --destructive: oklch(0.60 0.22 25);
 
-        --border: oklch(0.902 0.082 292.717);
-        --input: oklch(0.946 0.046 292.717);
-        --ring: oklch(0.627 0.265 293.5);
+        --border: oklch(0.88 0.03 221.3);
+        --input: oklch(0.93 0.02 221.3);
+        --ring: oklch(0.713 0.195 221.3);
 
         --radius: 0.625rem;
     }
 
     .dark {
-        --background: oklch(0.094 0 0);
-        --foreground: oklch(0.946 0.046 292.717);
+        /* Background gelap berbasis Slate-Blue */
+        --background: oklch(0.14 0.02 221.3);
+        --foreground: oklch(0.95 0.02 221.3);
 
-        --card: oklch(0.139 0.004 292);
-        --card-foreground: oklch(0.946 0.046 292.717);
-        --popover: oklch(0.139 0.004 292);
-        --popover-foreground: oklch(0.946 0.046 292.717);
+        --card: oklch(0.18 0.03 221.3);
+        --card-foreground: oklch(0.95 0.02 221.3);
+        --popover: oklch(0.18 0.03 221.3);
+        --popover-foreground: oklch(0.95 0.02 221.3);
 
-        --primary: oklch(0.734 0.183 292.717);
-        --primary-foreground: oklch(0.094 0 0);
+        /* Go Cyan yang sedikit disesuaikan agar menyala di dark mode */
+        --primary: oklch(0.76 0.16 221.3);
+        --primary-foreground: oklch(0.12 0.02 221.3);
 
-        --secondary: oklch(0.194 0.079 292);
-        --secondary-foreground: oklch(0.946 0.046 292.717);
+        --secondary: oklch(0.22 0.04 221.3);
+        --secondary-foreground: oklch(0.95 0.02 221.3);
 
-        --muted: oklch(0.194 0.079 292);
-        --muted-foreground: oklch(0.734 0.183 292.717);
+        --muted: oklch(0.22 0.04 221.3);
+        
+        /* FIXED: Diturunkan dari 0.70 ke 0.55 (lebih gelap) dan kroma dari 0.08 ke 0.03 (lebih redup) */
+        /* Sekarang teks sekunder memiliki kontras yang pas dan tidak menyaingi warna primary */
+        --muted-foreground: oklch(64.417% 0.0353 218.742);
 
-        --accent: oklch(0.194 0.079 292);
-        --accent-foreground: oklch(0.946 0.046 292.717);
+        --accent: oklch(0.22 0.04 221.3);
+        --accent-foreground: oklch(0.95 0.02 221.3);
 
-        --destructive: oklch(0.704 0.191 22.216);
+        --destructive: oklch(0.55 0.18 25);
 
-        --border: oklch(0.291 0.122 292 / 40%);
-        --input: oklch(0.291 0.122 292 / 60%);
-        --ring: oklch(0.627 0.265 293.5);
+        --border: oklch(0.28 0.04 221.3 / 50%);
+        --input: oklch(0.28 0.04 221.3 / 70%);
+        --ring: oklch(0.76 0.16 221.3);
     }
 
     * {

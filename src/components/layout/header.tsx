@@ -18,7 +18,9 @@ const Header = () => {
     return (
         <header
             className={`sticky left-0 top-0 z-50 backdrop-blur transition-all duration-500 ${
-                scrolled ? 'shadow-sm bg-white/70 dark:bg-gray-950/70' : 'bg-transparent'
+                scrolled 
+                    ? 'shadow-sm bg-background/70 border-b border-border/20' 
+                    : 'bg-transparent'
             }`}
         >
             <div className='container px-4 py-4 flex flex-col md:flex-row justify-center md:justify-between md:items-center gap-3 md:gap-0'>
@@ -33,7 +35,7 @@ const Header = () => {
                             >
                                 <a
                                     href={navigation.url}
-                                    className='text-slate-600 dark:text-gray-400 hover:text-purple-500 dark:hover:text-purple-400 transition-colors duration-200'
+                                    className='text-muted-foreground hover:text-primary transition-colors duration-200'
                                 >
                                     {navigation.name}
                                 </a>

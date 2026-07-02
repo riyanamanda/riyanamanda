@@ -44,7 +44,7 @@ const TECH_BADGE_TONES: Record<TechSemantic, string> = {
         'bg-cyan-100 text-cyan-900 border border-cyan-200 dark:bg-cyan-900/35 dark:text-cyan-200 dark:border-cyan-700/60',
     git: 'bg-orange-100 text-orange-900 border border-orange-200 dark:bg-orange-900/35 dark:text-orange-200 dark:border-orange-700/60',
     security:
-        'bg-rose-100 text-rose-900 border border-rose-200 dark:bg-rose-900/35 dark:text-rose-200 dark:border-rose-700/60',
+        'bg-rose-100 text-rose-900 border border-rose-200 dark:bg-rose-100/35 dark:text-rose-200 dark:border-rose-700/60',
     tooling:
         'bg-amber-100 text-amber-900 border border-amber-200 dark:bg-amber-900/35 dark:text-amber-200 dark:border-amber-700/60',
     default:
@@ -82,21 +82,24 @@ const ProjectCard = ({
 
     return (
         <li className='group flex justify-center w-fit'>
-            <a href={url} target='_blank' rel='noreferrer'>
+            <a href={url} target='_blank' rel='noreferrer' className='block w-full h-full'>
                 <div className='relative flex flex-col md:flex-row items-center'>
+                    {/* Image Container */}
                     <motion.div
                         initial={{ opacity: 0, x: position === 'odd' ? -30 : 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: '-60px' }}
                         transition={{ delay, duration: 0.8, ease }}
                         className={cn(
-                            'relative w-87.5 h-48 md:w-150 md:h-75 rounded-md shadow overflow-hidden',
+                            'relative w-87.5 h-48 md:w-150 md:h-75 rounded-md shadow-md overflow-hidden border border-border/40',
                             position === 'odd' ? 'md:order-1' : 'md:order-2'
                         )}
                     >
-                        <div className='bg-linear-to-br from-white to-[#9733EE] opacity-30 group-hover:opacity-0 h-full w-full absolute z-10 transition-all duration-300' />
+                        {/* Overlay yang memanfaatkan warna primer (Go Blue) dengan opacity rendah */}
+                        <div className='bg-linear-to-br from-background/10 to-primary opacity-25 group-hover:opacity-0 h-full w-full absolute z-10 transition-all duration-300' />
+                        
                         {isPrivate && (
-                            <Badge className='absolute top-2 right-2 z-20 bg-gray-900/75 backdrop-blur-sm text-white text-[9px] px-2 py-0.5 rounded-full normal-case tracking-wide font-medium'>
+                            <Badge className='absolute top-2 right-2 z-20 bg-background/80 backdrop-blur-xs text-foreground text-[9px] px-2 py-0.5 rounded-full normal-case tracking-wide font-medium border border-border'>
                                 Private / Internal
                             </Badge>
                         )}
@@ -104,32 +107,38 @@ const ProjectCard = ({
                             src={image}
                             alt={title}
                             fill
-                            style={{ objectFit: 'cover', objectPosition: 'center' }}
+                            sizes='(max-width: 768px) 350px, 600px'
+                            className='object-cover object-center group-hover:scale-102 transition-transform duration-500 ease-out'
                             priority
                         />
                     </motion.div>
 
+                    {/* Content Container */}
                     <motion.div
                         initial={{ opacity: 0, x: position === 'odd' ? 30 : -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: '-60px' }}
                         transition={{ delay, duration: 0.8, ease }}
                         className={cn(
-                            'text-center justify-end flex flex-col items-center h-fit z-10 ml-0 -mt-20 md:mt-0 w-fit md:w-96 md:bg-transparent md:px-0 px-3 border border-purple-500/10 md:border-0 pb-3 mb:pb-0 rounded-lg md:rounded-0',
+                            'text-center justify-end flex flex-col items-center h-fit z-10 ml-0 -mt-20 md:mt-0 w-fit md:w-96 md:bg-transparent md:px-0 px-3 border border-border/40 md:border-0 pb-3 md:pb-0 rounded-lg md:rounded-0 backdrop-blur-xs md:backdrop-blur-none bg-background/70 md:bg-transparent',
                             position === 'odd'
                                 ? 'md:order-2 md:-ml-32 md:text-right md:items-end'
                                 : 'md:order-1 md:-mr-32 md:text-left md:items-start'
                         )}
                     >
-                        <h3 className='w-64 text-base mt-1 md:mt-0 md:text-2xl text-purple-900 dark:text-purple-100 rounded px-3 md:px-0 bg-purple-50 dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent font-semibold'>
+                        <h3 className='w-full text-base mt-1 md:mt-0 md:text-2xl text-card-foreground rounded px-3 md:px-0 bg-card md:bg-transparent font-semibold tracking-tight'>
                             {title}
                         </h3>
 
-                        <p className='mt-2 md:mt-5 p-1 md:p-4 bg-purple-50 dark:bg-gray-900 border leading-relaxed border-purple-500/10 rounded text-[8px] md:text-xs text-purple-900 dark:text-gray-300 shadow-lg group-hover:shadow-none transition-all duration-300 ease-in-out w-72 md:w-full'>
+                        <p className='mt-2 md:mt-5 p-3 md:p-4 bg-card text-card-foreground border leading-relaxed border-border rounded text-[10px] md:text-xs shadow-lg group-hover:shadow-md transition-all duration-300 ease-in-out w-72 md:w-full'>
                             {description}
                         </p>
 
-                        <ul className='flex flex-wrap items-center gap-2 justify-end mt-5'>
+                        {/* List badge teknologi dengan alignment dinamis mengikuti arah letak kartu */}
+                        <ul className={cn(
+                            'flex flex-wrap items-center gap-2 mt-4 md:mt-5',
+                            position === 'odd' ? 'justify-center md:justify-end' : 'justify-center md:justify-start'
+                        )}>
                             {visibleTech.map((value, index) => {
                                 const { icon: Icon, semantic } = getTechSemantic(value);
 
@@ -137,7 +146,7 @@ const ProjectCard = ({
                                     <li key={index}>
                                         <Badge
                                             className={cn(
-                                                'font-medium px-2 py-1 rounded normal-case tracking-wide text-[8px] md:text-xs transition-all duration-300 ease-in-out shadow-xl group-hover:shadow-none',
+                                                'font-medium px-2 py-1 rounded normal-case tracking-wide text-[9px] md:text-xs transition-all duration-300 ease-in-out shadow-xs group-hover:shadow-none flex items-center gap-1',
                                                 TECH_BADGE_TONES[semantic]
                                             )}
                                         >
@@ -154,10 +163,10 @@ const ProjectCard = ({
                                 <li>
                                     <Badge
                                         variant='secondary'
-                                        className='font-medium px-2 py-1 rounded normal-case tracking-wide text-[8px] md:text-xs bg-slate-100 text-slate-700 border border-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:border-slate-700'
+                                        className='font-medium px-2 py-1 rounded normal-case tracking-wide text-[9px] md:text-xs flex items-center gap-1 border border-border'
                                     >
                                         <Braces
-                                            className='h-2.5 w-2.5 md:h-3 md:w-3'
+                                            className='h-2.5 w-2.5 md:h-3 md:w-3 text-muted-foreground'
                                             aria-hidden='true'
                                         />
                                         +{hiddenCount} more

@@ -1,4 +1,5 @@
 'use client';
+import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
 
 export default function DarkModeToggle() {
@@ -16,10 +17,12 @@ export default function DarkModeToggle() {
     };
 
     return (
-        <button
+        <Button
             onClick={toggle}
             aria-label='Toggle dark mode'
-            className='p-1.5 rounded text-purple-500 hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-all duration-200'
+            size='icon'
+            variant='ghost'
+            className='cursor-pointer'
         >
             {isDark ? (
                 <svg
@@ -58,6 +61,6 @@ export default function DarkModeToggle() {
                     <path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z' />
                 </svg>
             )}
-        </button>
+        </Button>
     );
 }

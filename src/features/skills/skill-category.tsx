@@ -1,3 +1,4 @@
+'use client';
 import { cn } from '@/lib/utils';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -32,11 +33,11 @@ const SKILL_CATEGORY_TONE_MAP: Record<
             'bg-blue-100 text-blue-900 border-blue-200 dark:bg-blue-900/40 dark:text-blue-100 dark:border-blue-700/60',
     },
     Architecture: {
-        heading: 'text-violet-700 dark:text-violet-300',
-        icon: 'text-violet-700 dark:text-violet-300',
-        item: 'bg-violet-50 text-violet-900 border-violet-100 dark:bg-violet-950/50 dark:text-violet-200 dark:border-violet-800/50',
+        heading: 'text-indigo-700 dark:text-indigo-300',
+        icon: 'text-indigo-700 dark:text-indigo-300',
+        item: 'bg-indigo-50 text-indigo-900 border-indigo-100 dark:bg-indigo-950/50 dark:text-indigo-200 dark:border-indigo-800/50',
         itemPrimary:
-            'bg-violet-100 text-violet-900 border-violet-200 dark:bg-violet-900/40 dark:text-violet-100 dark:border-violet-700/60',
+            'bg-indigo-100 text-indigo-900 border-indigo-200 dark:bg-indigo-900/40 dark:text-indigo-100 dark:border-indigo-700/60',
     },
     Database: {
         heading: 'text-emerald-700 dark:text-emerald-300',
@@ -66,13 +67,14 @@ const getCategoryIcon = (category: string): LucideIcon => {
 };
 
 const getCategoryTone = (category: string) => {
+    // Fallback disesuaikan menggunakan token warna slate/primary semantik portfolio Anda, bukan violet/purple
     return (
         SKILL_CATEGORY_TONE_MAP[category] ?? {
-            heading: 'text-purple-600 dark:text-purple-400',
-            icon: 'text-purple-600 dark:text-purple-300',
-            item: 'bg-purple-50 text-purple-900 border-purple-100 dark:bg-purple-950/50 dark:text-purple-200 dark:border-purple-800/50',
+            heading: 'text-foreground/80 dark:text-foreground/90',
+            icon: 'text-primary dark:text-primary',
+            item: 'bg-secondary text-secondary-foreground border-border',
             itemPrimary:
-                'bg-purple-100 text-purple-900 border-purple-200 dark:bg-purple-900/40 dark:text-purple-100 dark:border-purple-700/60',
+                'bg-primary/10 text-primary border-primary/30 dark:bg-primary/20 dark:text-primary-foreground dark:border-primary/40',
         }
     );
 };
@@ -84,14 +86,14 @@ const SkillCategory = ({ skill }: { skill: Skill }) => {
     return (
         <Card
             className={cn(
-                'relative p-4 rounded-lg ring-0 [--card-spacing:0] hover:shadow-md transition-all duration-300',
+                'relative p-4 rounded-lg ring-0 [--card-spacing:0] hover:shadow-md transition-all duration-300 bg-card text-card-foreground',
                 skill.isPrimary
-                    ? 'bg-linear-to-br from-purple-50 to-white dark:from-purple-950/30 dark:to-gray-900 border-2 border-purple-400 dark:border-purple-600 hover:border-purple-500 dark:hover:border-purple-500'
-                    : 'bg-white dark:bg-gray-900 border border-purple-100 dark:border-purple-900/40 hover:border-purple-300 dark:hover:border-purple-700'
+                    ? 'bg-linear-to-br from-primary/5 to-background dark:from-primary/10 dark:to-background border-2 border-primary/70 dark:border-primary/60 hover:border-primary dark:hover:border-primary'
+                    : 'border border-border/60 dark:border-border/40 hover:border-border-hover dark:hover:border-border-hover'
             )}
         >
             {skill.isPrimary && (
-                <Badge className='absolute top-3 right-3 px-2 py-0.5 rounded-full bg-purple-500 text-white text-[9px] normal-case tracking-wide font-semibold'>
+                <Badge className='absolute top-3 right-3 px-2 py-0.5 rounded-full bg-primary text-primary-foreground text-[9px] normal-case tracking-wide font-semibold shadow-xs'>
                     Primary Focus
                 </Badge>
             )}
@@ -112,7 +114,7 @@ const SkillCategory = ({ skill }: { skill: Skill }) => {
                     <li key={index}>
                         <Badge
                             className={cn(
-                                'text-[11px] px-2.5 py-1 rounded-full border normal-case tracking-normal font-medium',
+                                'text-[11px] px-2.5 py-1 rounded-full border normal-case tracking-normal font-medium shadow-xs',
                                 skill.isPrimary
                                     ? tone.itemPrimary
                                     : tone.item
