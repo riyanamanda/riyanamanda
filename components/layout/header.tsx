@@ -9,9 +9,7 @@ export default function Header({ portfolio }: { portfolio: Portfolio }) {
             <div className='space-y-8 md:space-y-10'>
                 <div className='flex items-start justify-between gap-4'>
                     <div>
-                        <h1 className='text-4xl font-bold tracking-tight bg-linear-to-r from-foreground via-foreground to-cyan-600 dark:to-cyan-400 bg-clip-text text-transparent'>
-                            {portfolio.name}
-                        </h1>
+                        <h1 className='text-4xl font-bold tracking-tight'>{portfolio.name}</h1>
                         <p className='font-medium text-sm sm:text-base text-muted-foreground mt-3 leading-relaxed'>
                             {portfolio.bio}
                         </p>

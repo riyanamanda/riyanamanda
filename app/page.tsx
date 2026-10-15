@@ -12,7 +12,7 @@ export default function Home() {
                 <div className='flex flex-col md:flex-row justify-between gap-12 lg:gap-16 items-start'>
                     <Header portfolio={portfolio} />
 
-                    <div className='w-full md:w-6/12 space-y-16 sm:space-y-20 text-muted-foreground leading-relaxed pt-6 md:pt-0'>
+                    <div className='w-full md:w-6/12 space-y-16 text-muted-foreground leading-relaxed pt-6 md:pt-0'>
                         <About />
                         <Separator />
                         <Experience />

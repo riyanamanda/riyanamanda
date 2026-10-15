@@ -8,7 +8,7 @@ export const portfolio = {
         { id: '1', name: 'Go', category: 'Backend' },
         { id: '2', name: 'Java (Spring Boot)', category: 'Backend' },
         { id: '3', name: 'TypeScript', category: 'Language' },
-        { id: '4', name: 'Next.js', category: 'Frontend' },
+        { id: '4', name: 'React', category: 'Frontend' },
         { id: '5', name: 'PostgreSQL', category: 'Database' },
         { id: '6', name: 'Docker', category: 'DevOps' },
     ],
