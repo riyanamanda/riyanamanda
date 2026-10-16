@@ -1,15 +1,17 @@
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Portfolio } from '@/types';
+import { portfolio } from '@/data/portfolio';
 import { IconMenu2 } from '@tabler/icons-react';
 import { Badge } from '../ui/badge';
 
-export default function Header({ portfolio }: { portfolio: Portfolio }) {
+export default function Header() {
     return (
         <header className='w-full md:w-5/12 md:sticky md:top-20 md:h-[calc(100vh-10rem)] flex flex-col justify-between'>
             <div className='space-y-8 md:space-y-10'>
                 <div className='flex items-start justify-between gap-4'>
                     <div>
-                        <h1 className='text-4xl font-bold tracking-tight'>{portfolio.name}</h1>
+                        <h1 className='text-4xl sm:text-5xl font-bold tracking-tight'>
+                            {portfolio.name}
+                        </h1>
                         <p className='font-medium text-sm sm:text-base text-muted-foreground mt-3 leading-relaxed'>
                             {portfolio.bio}
                         </p>
@@ -65,10 +67,10 @@ export default function Header({ portfolio }: { portfolio: Portfolio }) {
                     <div className='flex flex-wrap gap-2'>
                         {portfolio.stacks.map((stack) => (
                             <Badge
-                                key={stack.id}
+                                key={stack}
                                 variant='secondary'
                                 className='px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground hover:bg-accent border border-border/50 transition-colors'>
-                                {stack.name}
+                                {stack}
                             </Badge>
                         ))}
                     </div>

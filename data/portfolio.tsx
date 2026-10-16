@@ -5,12 +5,17 @@ export const portfolio = {
     role: 'Backend-focused Fullstack Software Engineer',
     bio: 'Experienced Software Engineer building scalable backend systems and modern web apps.',
     stacks: [
-        { id: '1', name: 'Go', category: 'Backend' },
-        { id: '2', name: 'Java (Spring Boot)', category: 'Backend' },
-        { id: '3', name: 'TypeScript', category: 'Language' },
-        { id: '4', name: 'React', category: 'Frontend' },
-        { id: '5', name: 'PostgreSQL', category: 'Database' },
-        { id: '6', name: 'Docker', category: 'DevOps' },
+        'Go',
+        'Java (Spring Boot)',
+        'TypeScript',
+        'React',
+        'Tailwind',
+        'PostgreSQL',
+        'MySQL',
+        'Redis',
+        'RabbitMQ',
+        'Docker',
+        'Proxmox',
     ],
     socials: [
         {

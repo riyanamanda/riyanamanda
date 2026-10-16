@@ -3,7 +3,7 @@ import { experiences } from '@/data/experience';
 
 export default function Experience() {
     return (
-        <section id='experience' className='space-y-8 scroll-mt-20'>
+        <section id='experience' className='scroll-mt-20'>
             <h2 className='text-xs font-semibold uppercase tracking-widest text-muted-foreground/80 md:hidden'>
                 Experience
             </h2>
@@ -24,7 +24,7 @@ export default function Experience() {
                             <Badge variant='secondary'>{exp.status}</Badge>
                         </h3>
 
-                        <ul className='list-disc text-xs ml-4 space-y-1'>
+                        <ul className='list-disc text-sm ml-4 space-y-1'>
                             {exp.tasks.map((task) => (
                                 <li key={task}>{task}</li>
                             ))}

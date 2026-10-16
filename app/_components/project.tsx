@@ -34,7 +34,7 @@ export default function Project() {
                                     className='opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity shrink-0 text-primary'
                                 />
                             </h3>
-                            <p className='text-xs leading-relaxed text-muted-foreground'>
+                            <p className='text-sm leading-relaxed text-muted-foreground'>
                                 {pro.description}
                             </p>
                             <div className='flex flex-wrap gap-1.5 pt-1'>
