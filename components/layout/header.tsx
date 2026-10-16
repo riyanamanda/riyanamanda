@@ -66,10 +66,7 @@ export default function Header() {
                     </h2>
                     <div className='flex flex-wrap gap-2'>
                         {portfolio.stacks.map((stack) => (
-                            <Badge
-                                key={stack}
-                                variant='secondary'
-                                className='px-3 py-1 text-xs font-medium bg-secondary text-secondary-foreground hover:bg-accent border border-border/50 transition-colors'>
+                            <Badge key={stack} variant='primary'>
                                 {stack}
                             </Badge>
                         ))}

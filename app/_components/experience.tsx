@@ -19,9 +19,13 @@ export default function Experience() {
 
                         <h3 className='font-semibold text-foreground flex items-center justify-between sm:justify-start gap-1 flex-wrap'>
                             <span>
-                                {exp.role} · {exp.company}
+                                {exp.role} · {exp.company} -{' '}
                             </span>
-                            <Badge variant='secondary'>{exp.status}</Badge>
+                            <Badge
+                                variant='accent'
+                                className='bg-[#6DB33F]/15 text-[#6DB33F] border border-[#6DB33F]/30 dark:text-[#7ecb47]'>
+                                {exp.status}
+                            </Badge>
                         </h3>
 
                         <ul className='list-disc text-sm ml-4 space-y-1'>
@@ -32,7 +36,7 @@ export default function Experience() {
 
                         <div className='flex flex-wrap gap-1.5 pt-2'>
                             {exp.technologies.map((tech) => (
-                                <Badge key={tech} variant='secondary'>
+                                <Badge variant='primary' key={tech}>
                                     {tech}
                                 </Badge>
                             ))}

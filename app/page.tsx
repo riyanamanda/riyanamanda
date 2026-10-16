@@ -19,7 +19,7 @@ export default function Home() {
                         <Project />
 
                         <section className='space-y-6 scroll-mt-20 pb-10 md:pb-0'>
-                            <blockquote className='border-l-2 border-primary/40 pl-4 italic text-sm text-muted-foreground/90'>
+                            <blockquote className='border-l-2 border-destructive/50 pl-4 italic text-sm text-muted-foreground/90 bg-destructive/10'>
                                 &ldquo;If you feel tired of studying, be prepared to accept the
                                 bitterness of ignorance.&rdquo;
                             </blockquote>

@@ -28,7 +28,9 @@ export default function Project() {
                         </div>
                         <div className='sm:col-span-5 space-y-2'>
                             <h3 className='font-semibold text-foreground text-base group-hover:text-primary transition-colors flex items-center justify-between'>
-                                <span>{pro.title}</span>
+                                <span>
+                                    {pro.title} · {pro.company}
+                                </span>
                                 <IconArrowUpRight
                                     size={16}
                                     className='opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity shrink-0 text-primary'
@@ -39,7 +41,7 @@ export default function Project() {
                             </p>
                             <div className='flex flex-wrap gap-1.5 pt-1'>
                                 {pro.technologies.map((tech) => (
-                                    <Badge key={tech} variant='secondary'>
+                                    <Badge key={tech} variant='primary'>
                                         {tech}
                                     </Badge>
                                 ))}
