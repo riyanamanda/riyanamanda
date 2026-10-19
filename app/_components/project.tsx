@@ -5,12 +5,12 @@ import Image from 'next/image';
 
 export default function Project() {
     return (
-        <section id='project' className='space-y-8 scroll-mt-20'>
-            <h2 className='text-xs font-semibold uppercase tracking-widest text-muted-foreground/80 md:hidden'>
-                Featured Projects
+        <section id='project' className='scroll-mt-20'>
+            <h2 className='scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0'>
+                Featured Project
             </h2>
 
-            <div className='space-y-10'>
+            <div className='space-y-6'>
                 {project.map((pro) => (
                     <a
                         href={pro.url}

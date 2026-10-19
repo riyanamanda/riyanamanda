@@ -4,7 +4,7 @@ import { experiences } from '@/data/experience';
 export default function Experience() {
     return (
         <section id='experience' className='scroll-mt-20'>
-            <h2 className='text-xs font-semibold uppercase tracking-widest text-muted-foreground/80 md:hidden'>
+            <h2 className='scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0'>
                 Experience
             </h2>
 

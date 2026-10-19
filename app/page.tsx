@@ -1,5 +1,4 @@
 import Header from '@/components/layout/header';
-import { Separator } from '@/components/ui/separator';
 import About from './_components/about';
 import Experience from './_components/experience';
 import Project from './_components/project';
@@ -13,13 +12,11 @@ export default function Home() {
 
                     <div className='w-full md:w-6/12 space-y-16 text-muted-foreground leading-relaxed pt-6 md:pt-0'>
                         <About />
-                        <Separator />
                         <Experience />
-                        <Separator />
                         <Project />
 
                         <section className='space-y-6 scroll-mt-20 pb-10 md:pb-0'>
-                            <blockquote className='border-l-2 border-destructive/50 pl-4 italic text-sm text-muted-foreground/90 bg-destructive/10'>
+                            <blockquote className='mt-6 border-l-2 border-destructive/50 pl-4 italic text-sm font-medium text-muted-foreground/90 bg-destructive/10'>
                                 &ldquo;If you feel tired of studying, be prepared to accept the
                                 bitterness of ignorance.&rdquo;
                             </blockquote>
