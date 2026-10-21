@@ -18,6 +18,7 @@ export const portfolio = {
         'PostgreSQL',
         'MySQL',
         'Redis',
+        'RustFS',
         'RabbitMQ',
         'Docker',
         'Proxmox',
