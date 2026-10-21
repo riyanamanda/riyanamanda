@@ -1,4 +1,9 @@
-import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from '@tabler/icons-react';
+import {
+    IconBrandGithub,
+    IconBrandInstagram,
+    IconBrandLinkedin,
+    IconBrandUpwork,
+} from '@tabler/icons-react';
 
 export const portfolio = {
     name: 'Riyan Amanda Nasution',
@@ -32,6 +37,12 @@ export const portfolio = {
         },
         {
             id: '3',
+            name: 'Upwork',
+            icon: IconBrandUpwork,
+            url: 'https://upwork.com/freelancers/riyana4',
+        },
+        {
+            id: '4',
             name: 'Instagram',
             icon: IconBrandInstagram,
             url: 'https://www.instagram.com/riyan.amanda/',
