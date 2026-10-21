@@ -1,6 +1,6 @@
 export const experiences = [
     {
-        year: '2021 — PRESENT',
+        year: '2023 — PRESENT',
         role: 'Fullstack Software Engineer',
         company: 'Ernaldi Bahar Hospital',
         status: 'Contract',
